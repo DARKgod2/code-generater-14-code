@@ -1,0 +1,22 @@
+alert("Made by CClaGGeR kappa#2137(#notaleecher)");
+alert("for you");
+var speed = prompt("Type 1,000 if your PC is fast, 500 for a slow pc")
+function makeid() {
+  var text = "";
+  var possible = "ABCDEFGHIJKLMNOPQRSTUVWYZabcdefghijklmnopqrstuvwyz0123456789"; //you can edit this to your own generation code
+  for (var i = 0; i < 14; i++)
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+  return text;
+}
+
+ 
+function main() {
+    document.getElementById("gcpromoinput").value = makeid();
+    document.getElementById("button-add-gcpromo").click();
+}
+ 
+setInterval(function() {
+    main();
+}, speed);
+NOTE: don't change tabs
